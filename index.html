@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Evento</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a68f0fe87c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .botaoX{
+            transform: rotate(0eg);
+            transition: all ease .3s;
+        }
+
+        .rotate-45{
+            transform: rotate(45deg);
+            transition: all ease .3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid contador">
+        <div class="row g-0">
+            <div class="col-12 d-flex justify-content-center">
+                <span class="fw-bold txt_titulo">O evento começa em:</span>
+            </div>
+        </div>
+        <div class="row horario g-0 d-flex justify-content-center text-center fw-bold" id="countdown_dashboard">
+            <div class="col-md-1 col-3">
+                <span class="span_horario" id="days"></span>
+                <p class="p_horario">DIAS</p>
+            </div>
+            <div class="col-md-1 col-3">
+                <span class="span_horario" id="hours"></span>
+                <p class="p_horario">HORAS</p>
+            </div>
+            <div class="col-md-1 col-3">
+                <span class="span_horario" id="minutes"></span>
+                <p class="p_horario">MINUTOS</p>
+            </div>
+            <div class="col-md-1 col-3">
+                <span class="span_horario" id="seconds"></span>
+                <p class="p_horario">SEGUNDOS</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid apresentacaoEvento p-3">
+        <div class="camadaVideo">
+        </div>
+        <div class="conteudoApresentacao">
+            <div class="video">
+                <video autoplay muted loop>
+                    <source src="video/EVENTO-MELICIDADE-2023.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="conteudo">
+                <div class="row g-0">
+                    <div class="col-1">
+                        <img src="https://i.postimg.cc/7ZJwz254/BD-CONSULTORIA.png" alt="bd-consultoria" class="w-100">
+                    </div>
+                </div>
+
+                <div class="row g-0 d-flex justify-content-center">
+                    <div class="col-2">
+                        <img src="https://i.postimg.cc/7ZJwz254/BD-CONSULTORIA.png" alt="bd-consultoria" class="w-100" style="margin-left:-9%">
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-12 d-flex justify-content-center">
+                        <span class="span_ultimasVagas mt-2">Últimas Vagas</span>
+                    </div>
+                </div>
+                <div class="row g-0 d-flex justify-content-center mt-3 text-center ms-md-5 ms-0">
+                    <div class="col-xl-2 col-md-2 col-12 mb-xl-0 mb-3">
+                        <div class="div_data">
+                            <img src="https://i.postimg.cc/gjjFgq5J/calendario-icone.png" class="imgIcone"> 
+                            <span class="span_data">27 de Janeiro</span> 
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-2 col-12 mb-xl-0 mb-3">
+                        <div class="div_data">
+                            <img src="https://i.postimg.cc/T3gwjfgs/relogio-icone.png" class="imgIcone">
+                            <span class="span_data">00:00 às 00:00</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-2 col-12 mb-xl-0 mb-3">
+                        <div class="div_data">
+                            <img src="https://i.postimg.cc/J7TVFvRz/mapa-icone.png" class="imgIcone">
+                            <span class="span_data"> R. Ângelo Piva, 144 - Pres. Altino, Osasco - SP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0 d-flex justify-content-center mt-3 text-center">
+                    <div class="col-8 mt-3">
+                        <span class="span_descricaoEvento">Lorem ipsum quam tortor litora libero class lorem donec elementum eros, tortor etiam suspendisse ipsum magna</span>
+                    </div>
+                    <div class="col-8 mt-5 paddingBottom">
+                        <span class="span_legendaEvento">Lorem ipsum quam tortor litora libero class lorem donec elementum eros, tortor etiam suspendisse ipsum magna</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- área de imagens com descrição -->
+    <div class="container-fluid mt-5 mb-5 containerImagensDescricao">
+        <div class="row g-0 rowImagensDescricao">
+            <div class="col-md-3 col-12 text-center">
+                <img src="https://i.postimg.cc/ZRxFx4YL/634ee60f66210aee8196c6a5-icon-relogio-1.png" >
+                <p><span class="fw-bold">+ 10 horas de conteúdos</span><br> sobre gestão, marketing, vendas e estratégia</p>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <img src="https://i.postimg.cc/PxLx4MMr/634ee60f05e0dc3f36aa5c32-icon-podcast-2.png" >
+                <p>Gravação do Podcast <b>Papo de Gestão</b> com Tallis Gomes e Cristina Junqueira, co-fundadora do Nubank</p>
+            </div>
+            <div class="col-md-2 col-12 text-center">
+                <img src="https://i.postimg.cc/YSCzzjyq/634ee617d3517114b7df1586-icon-network.png" >
+                <p>Sessões de <b>networking</b> de alto nível</p>
+            </div>
+            <div class="col-md-2 col-12 text-center">
+                <img src="https://i.postimg.cc/HksyfR06/634ee60fa1ed45494f68052f-icon-mercado.png" >
+                <p>Acesso a <b>grandes nomes do mercado</b></p>
+            </div>
+        </div>
+    </div>
+    <!-- fim -->
+
+    <div class="container-fluid conhecaEvento">
+        <div class="camadaEvento">
+        </div>
+        <div class="conteudoConhecaEvento">
+            <div class="row g-0 p-5">
+                <div class="col-md-6 col-8 p-xl-5 p-0">
+                    <div class="row g-0 mt-5">
+                        <img src="https://i.postimg.cc/7ZJwz254/BD-CONSULTORIA.png" alt="bd-consultoria" style="width:350px;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mt-xl-0 mt-5">
+                    <div class="row g-0">
+                        <h2 class="fw-bold">Conheça o evento</h2>
+                        <p>Lorem ipsum etiam imperdiet quis cubilia quis etiam fusce pellentesque, neque mauris sollicitudin fringilla primis eleifend dictum mollis est auctor, pulvinar interdum arcu scelerisque tristique conubia a mattis. sollicitudin quis morbi rhoncus aliquam phasellus primis ultricies, nostra non donec vulputate sit vestibulum, senectus iaculis </p>
+                    </div>
+                    <div class="row g-0 mt-3">
+                        <div class="col-md-5 me-md-3 me-0 col-12 mt-md-0 mt-3">
+                            <img src="https://i.postimg.cc/W3hf9dK7/634ee4e4278287f15ab51f47-icon-estrategia-white.png" >
+                            <p class="mt-3 fw-bold">Estratégia</p>
+                            <p class="fw-bold">Aprenda como encontrar o equilíbrio entre o presente e o futuro da sua empresa, entre operação e estratégia.</p>
+                        </div>
+                        <div class="col-md-6 col-12 mt-md-0 mt-3">
+                            <img src="https://i.postimg.cc/Bb55Nsqg/634ee4f42782877861b52175-icon-networking-white.png" >
+                            <p class="mt-3 fw-bold">Networking</p>
+                            <p class="fw-bold">‍Aproveite os momentos de networking para trocar experiências e vivências com empreendedores que passam pelos mesmos desafios que você e tire insights valiosos para o seu negócio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid Evento">
+        
+        <div class="row g-0 p-md-5 p-0 pt-5">
+            <div class="col-md-6 ms-1 col-12 mx-auto">
+                <img src="https://i.postimg.cc/Fz3DvXmd/slide1-melicidade.jpg"  class="w-100" style="border-radius: 20px;">
+            </div>
+            <div class="col-md-5 col-12 paraQuemE">
+                <h2><b>Para quem</b> é o Evento?</h2>
+                <p>CEOs, presidentes, fundadores, donos de negócio e profissionais em posições estratégicas.</p>
+                <p>Este é um evento presencial para quem lidera e quer inovar no modelo de gestão, levar sua empresa para o próximo patamar e aproveitar oportunidades de negócio.</p>
+            </div>
+        </div>
+        <div class="row g-0 mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <h2 class="fw-bold h2confira">Confira a programação do Evento:</h2>
+            </div>
+        </div>
+        <div class="row g-0 mt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="div_data">
+                    <img src="https://i.postimg.cc/gjjFgq5J/calendario-icone.png" class="imgIcone"> 
+                    <span class="span_dataConfira">27 de Janeiro</span> 
+                </div>            
+            </div>
+        </div>
+        <div class="row g-0 mt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="div_data">
+                    <img src="https://i.postimg.cc/T3gwjfgs/relogio-icone.png" class="imgIcone">
+                    <span class="span_dataConfira">00:00 às 00:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 mt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="div_data">
+                    <img src="https://i.postimg.cc/J7TVFvRz/mapa-icone.png" class="imgIcone">
+                    <span class="span_dataConfira"> R. Ângelo Piva, 144 - Pres. Altino, Osasco - SP</span>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 p-5 d-flex justify-content-center">
+            <div class="col-8">
+                <img src="https://i.postimg.cc/3NrH1Xpb/63598dbac86bbe33aac89e28-timeline-v4.png"  style="width: 100%;">
+            </div>
+            
+        </div>
+    </div>
+    <div class="row g-0 mt-5">
+        <div class="col-12 d-flex justify-content-center text-center"> 
+            <h2>O que dizem sobre o Evento</h2>
+        </div>
+    </div>
+    <div class="container-fluid p-md-5 p-0">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.postimg.cc/WbvRW31G/banner-teste.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p class="p_carrosel">Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.postimg.cc/WbvRW31G/banner-teste.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p class="p_carrosel">Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.postimg.cc/WbvRW31G/banner-teste.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p class="p_carrosel">Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="top:0px">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="top:0px">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid lineUp">
+        <img src="https://i.postimg.cc/13Lf9r8q/633b2abe8a1bab324a2ff64e-assetinho.png" class="imagemTopo" >
+        <img src="https://i.postimg.cc/13Lf9r8q/633b2abe8a1bab324a2ff64e-assetinho.png" class="imagemBaixo" >
+        <div class="row g-0 mt-5">
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <h2>Confira o Line Up do Evento</h2>
+            </div>
+        </div>
+        <div class="row g-0 mt-5 d-flex justify-content-center">
+            <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <img src="https://i.postimg.cc/wBgH8wkB/PALESTRANTES-04.png"  class="imgLineUP">
+                <p class="nomeIntegrante mt-3">Bruno Darolt</p>
+                <p class="cargoIntegrante">CEO da BD Consultoria</p>
+            </div>
+            <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <img src="https://i.postimg.cc/9fKJ4Ymj/PALESTRANTES-05.png"  class="imgLineUP">
+                <p class="nomeIntegrante mt-3">Renan Chieppe</p>
+                <p class="cargoIntegrante">Head de Consultoria</p>
+            </div>
+            <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <img src="https://i.postimg.cc/2jc3n9pv/PALESTRANTES-02.png"  class="imgLineUP">
+                <p class="nomeIntegrante mt-3">Wagner Lima </p>
+                <p class="cargoIntegrante">Consultor Estratégico </p>
+            </div>
+        </div>
+
+        <div class="row g-0 mt-5 d-flex justify-content-center">
+            <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <img src="https://i.postimg.cc/YSDqQjZ7/PALESTRANTES-03.png"  class="imgLineUP">
+                <p class="nomeIntegrante mt-3">Wilian Mendes</p>
+                <p class="cargoIntegrante">Consultor Estratégico</p>
+            </div>
+            <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <img src="https://i.postimg.cc/fTMnTDqf/PALESTRANTES-01.png"  class="imgLineUP">
+                <p class="nomeIntegrante mt-3">Rodrigo Crepaldi</p>
+                <p class="cargoIntegrante">Consultor Estratégico</p>
+            </div>
+            <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <img src="https://i.postimg.cc/dtNHPYb1/PALESTRANTES-2-02.png"  class="imgLineUP">
+                <p class="nomeIntegrante mt-3">Stephanie Rubio</p>
+                <p class="cargoIntegrante">Mercado Shops</p>
+            </div>
+        </div>
+        <div class="row g-0 mt-5 d-flex justify-content-center">
+            <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <img src="https://i.postimg.cc/XvLBmVP1/PALESTRANTES-2-01.png"  class="imgLineUP">
+                <p class="nomeIntegrante mt-3">Nathalia Novaes</p>
+                <p class="cargoIntegrante">Influenciadora Mercado Livre</p>
+            </div>
+        </div>
+        <div class="row g-0 d-flex justify-content-center mt-5 text-center">
+            <div class="col-12">
+                <span class="span_marque">Marque na sua agenda:</span>
+            </div>
+        </div>
+        <div class="row g-0 mt-3 text-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="div_data">
+                    <img src="https://i.postimg.cc/gjjFgq5J/calendario-icone.png" class="imgIcone"> 
+                    <span class="span_dataConfira">27 de Janeiro</span> 
+                </div>   
+            </div>
+        </div>
+        <div class="row g-0 mt-3 text-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="div_data">
+                    <img src="https://i.postimg.cc/T3gwjfgs/relogio-icone.png" class="imgIcone">
+                    <span class="span_dataConfira">00:00 às 00:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 mt-2 text-center" style="padding-bottom: 10%;">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="div_data">
+                    <img src="https://i.postimg.cc/J7TVFvRz/mapa-icone.png" class="imgIcone">
+                    <span class="span_dataConfira"> R. Ângelo Piva, 144 - Pres. Altino, Osasco - SP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid p-5 secaoPreparacao">
+        <div class="row g-0 d-flex justify-content-center">
+            <div class="col-md-3 col-12 mx-5 mb-5">
+                <img src="https://i.postimg.cc/zGcWxPZ9/slide3-melicidade.jpg"  class="w-100 imgBorder">
+            </div>
+            <div class="col-md-3 col-12 mx-5 mb-5">
+                <img src="https://i.postimg.cc/VNtSDfFC/slide5-melicidade.jpg"  class="w-100 imgBorder">
+            </div>
+            <div class="col-md-3 col-12 mx-5">
+                <img src="https://i.postimg.cc/CLKz9HNY/slide4-melicidade.webp"  class="w-100 imgBorder">
+            </div>
+        </div>
+        <div class="row g-0 mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <span class="span_tituloCarrosel">Um dia para você se preparar para <b>liderar seu negócio</b> e <b>aproveitar oportunidades.</b></span>
+            </div>
+        </div>
+        <div class="row g-0 mt-5 p-5" style="background: #fff; position: relative;">
+            <img src="https://i.postimg.cc/RFyRRP9G/633b2acfb1e383420e8c03aa-arrow-slider.png"  class="setaTopo" >
+            <img src="https://i.postimg.cc/wMNkbhjz/633b2acfb1e3833d0f8c03ab-arrow-slider-2.png"  class="setaBaixo">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <img src="https://i.postimg.cc/MX2Jhb0m/633b2acfb1e38300f58c03ac-lideranca.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-md-8 col-12 mx-md-5 mx-0 txt_carrosel">
+                            <h3>Marketing</h3>
+                            <p class="mt-5">O consumidor mudou seus hábitos de compra. E mudar a sua forma de fazer marketing é crucial para encontrá-lo da forma como ele se sente confortável em fazer negócios</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <img src="https://i.postimg.cc/pLPLrR8Y/633b2acfb1e3834c608c03ae-estrategia.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-md-8 col-12 mx-md-5 mx-0 txt_carrosel">
+                            <h3>Growth</h3>
+                            <p class="mt-5">Desenvolva uma mentalidade de crescimento acelerado para encontrar as alavancas que vão levar seu negócio para o próximo patamar.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <img src="https://i.postimg.cc/Xq65qtnM/633b2acfb1e383b6f38c03b0-vendas.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-md-8 col-12 mx-md-5 mx-0 txt_carrosel">
+                            <h3>Vendas</h3>
+                            <p class="mt-5">Sua fonte de receita é um dos principais fatores que vai levar sua empresa ao crescimento. Entenda como engajar seu time e melhorar suas taxas de conversão.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <img src="https://i.postimg.cc/gJXPvjyC/633b2ad0b1e383544e8c03b2-gestao-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-md-8 col-12 mx-md-5 mx-0 txt_carrosel">
+                            <h3>Gestão</h3>
+                            <p class="mt-5">Garanta que todos os vetores da sua empresa estejam alinhados no mesmo objetivo em comum, visando o crescimento e a expansão do negócio.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <div class="container-fluid sombraBox">
+        <div class="row g-0">
+            <div class="col-12 mt-5 d-flex justify-content-center text-center">
+                <h3 class="garantaAgora"><b>Garanta agora mesmo</b> sua participação no Evento</h3>
+            </div>
+        </div>
+        <div class="row g-0 mt-3 text-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="div_data">
+                    <img src="https://i.postimg.cc/gjjFgq5J/calendario-icone.png" class="imgIcone"> 
+                    <span class="span_dataGaranta">27 de Janeiro</span> 
+                </div>  
+            </div>
+        </div>
+        <div class="row g-0 mt-3 text-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="div_data">
+                    <img src="https://i.postimg.cc/T3gwjfgs/relogio-icone.png" class="imgIcone">
+                    <span class="span_dataGaranta">00:00 às 00:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 mt-3 text-center">
+            <div class="col-12 mb-5 d-flex justify-content-center">
+                <div class="div_data">
+                    <img src="https://i.postimg.cc/J7TVFvRz/mapa-icone.png" class="imgIcone">
+                    <span class="span_dataGaranta"> R. Ângelo Piva, 144 - Pres. Altino, Osasco - SP</span>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 d-flex justify-content-evenly mb-5">
+            <div class="col-md-5 col-12 mb-md-0 mb-5">
+                <div class="block">
+                    <div class="titulo">
+                        <span class="span_titulo">Encerrado</span>
+                    </div>
+                    <div class="corpo">
+                        <span class="span_corpo">2º Lote</span>
+                        <div class="botao">
+                            <input type="button" value="QUERO PARTICIPAR" class="botaoQuero">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-12">
+                <div class="block">
+                    <div class="titulo">
+                        <span class="span_titulo">Encerrado</span>
+                    </div>
+                    <div class="corpo">
+                        <span class="span_corpo">3º Lote</span>
+                        <div class="botao">
+                            <input type="button" value="QUERO PARTICIPAR" class="botaoQuero">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="container-fluid perguntarFrequentes">
+        <div class="fundoCima">
+            <img src="https://i.postimg.cc/jCVNsDvt/633b2ada1143396aa10e46f0-bg-asset.png" >
+        </div>
+        
+        <div class="conteudoPerguntas p-5">
+            <div class="row g-0">
+                <div class="col-12 d-flex justify-content-center mt-5 text-center">
+                    <span class="perguntasFrequentesTitulo">Perguntas frequentes</span>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12 mt-5 boxPergunta">
+                    <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;" onclick="abrePergunta1();">
+                        <span class="span_pergunta">O que é o Evento?</span><i class="fa-solid fa-plus botaoX" id="botaoX1"></i>
+                    </div>
+                    <div id="pergunta1" class="mt-5" style="display: none;">
+                        <p>É um dia com conteúdos atualizados de gestão, baseado nas empresas que mais crescem no mundo, de forma traduzida para realidade brasileira.</p>
+                        <p>Tudo para municiar o empreendedor brasileiro para enfrentar os desafios que o cenário macroeconômico promete.</p>
+                        <p>Neste evento presencial, você estará cercado de pessoas que pensam e falam sobre negócios de forma aplicável, engajadas em gerar empregos, fomentar o crescimento e mudar a realidade socioeconômica do Brasil.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12 mt-5 boxPergunta">
+                    <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;" onclick="abrePergunta2();">
+                        <span class="span_pergunta">Quando e onde acontecerá o Evento?</span><i class="fa-solid fa-plus botaoX" id="botaoX2"></i>
+                    </div>
+                    <div id="pergunta2" class="mt-5" style="display: none;">
+                        <p>O Evento acontecerá no dia 27 de outubro, das 8h30 às 19h30, em São Paulo - SP.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12 mt-5 boxPergunta">
+                    <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;" onclick="abrePergunta3();">
+                        <span class="span_pergunta">Para quem é o Evento?</span><i class="fa-solid fa-plus botaoX" id="botaoX3"></i>
+                    </div>
+                    <div id="pergunta3" class="mt-5" style="display: none;">
+                        <p>Este é um evento para CEOs, presidentes, fundadores e donos de negócio que querem inovar no modelo de gestão, pensando em prosperar e perpetuar seus negócios com as práticas e ferramentas de gestão das empresas que mais crescem no mundo, adaptadas para a realidade brasileira.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12 mt-5 mb-5 boxPergunta">
+                    <div class="d-flex justify-content-between align-items-center" style="cursor: pointer;" onclick="abrePergunta4();">
+                        <span class="span_pergunta">Gostaria de tirar dúvidas sobre o Evento. O que fazer?</span><i class="fa-solid fa-plus botaoX" id="botaoX4"></i>
+                    </div>
+                    <div id="pergunta4" class="mt-5" style="display: none;">
+                        <p>Entre em contato com o nosso time através deste link e esclareça todas as suas dúvidas a respeito do Evento.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-0 d-flex justify-content-center">
+                <div class="col-md-1 col-8 mt-5 mb-5">
+                    <img src="https://i.postimg.cc/m2JLgRLh/BD-CONSULTORIA.png" alt="bd-consultoria" class="w-100 bdConsultoriaRodape">
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5515997065033&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float" style="color: #fff;"></i>
+    </a>
+</body>
+</html>
+<script>
+        function abrePergunta1(){
+            
+            $('#botaoX1').toggleClass('rotate-45');
+            
+            var display = document.getElementById('pergunta1').style.display;
+            var altura = document.querySelector("#pergunta1");
+
+            if(display == "none"){
+                document.getElementById('pergunta1').style.display = 'block';
+            }
+            else{
+                document.getElementById('pergunta1').style.display = 'none';
+            }
+        }
+
+        function abrePergunta2(){
+            $('#botaoX2').toggleClass('rotate-45');
+            
+            var display = document.getElementById('pergunta2').style.display;
+            var altura = document.querySelector("#pergunta2");
+
+            if(display == "none"){
+                document.getElementById('pergunta2').style.display = 'block';
+            }
+            else{
+                document.getElementById('pergunta2').style.display = 'none';
+            }
+        }
+
+        function abrePergunta3(){
+            $('#botaoX3').toggleClass('rotate-45');
+            
+            var display = document.getElementById('pergunta3').style.display;
+            var altura = document.querySelector("#pergunta3");
+
+            if(display == "none"){
+                document.getElementById('pergunta3').style.display = 'block';
+            }
+            else{
+                document.getElementById('pergunta3').style.display = 'none';
+            }
+        }
+
+        function abrePergunta4(){
+            $('#botaoX4').toggleClass('rotate-45');
+            
+            var display = document.getElementById('pergunta4').style.display;
+            var altura = document.querySelector("#pergunta4");
+
+            if(display == "none"){
+                document.getElementById('pergunta4').style.display = 'block';
+            }
+            else{
+                document.getElementById('pergunta4').style.display = 'none';
+            }
+        }
+
+        function countdown(){
+            var now = new Date();
+            // Altere a data do seu evento aqui
+            var eventDate = new Date("Jan 27, 2023 00:00:00");
+            var currentTiime = now.getTime();
+            var eventTime = eventDate.getTime();
+            var remTime = eventTime - currentTiime;
+            // calculando o dia, hora, minuto e segundo
+            var d = Math.floor(remTime / (1000 * 60 * 60 * 24));
+            var h = Math.floor((remTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var m = Math.floor((remTime % (1000 * 60 * 60)) / (1000 * 60));
+            var s = Math.floor((remTime % (1000 * 60)) / 1000);
+            document.getElementById("days").textContent = d;
+            document.getElementById("days").innerText = d;
+            document.getElementById("hours").textContent = h;
+            document.getElementById("minutes").textContent = m;
+            document.getElementById("seconds").textContent = s;
+            setTimeout(countdown, 1000);
+            
+            // Verifica se acabou o período do evento
+            if (remTime < 0) {
+            clearInterval(countdown);
+            //document.getElementById("demogrande").innerHTML = "FIM";
+            document.getElementById("days").innerHTML = " ";
+            document.getElementById("hours").innerHTML = " ";
+            document.getElementById("minutes").innerHTML = " ";
+            document.getElementById("seconds").innerHTML = "<small>FIM</small>"; 
+            } 
+        }
+        countdown();
+   
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.1.0.min.js" integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0=" crossorigin="anonymous"></script>
