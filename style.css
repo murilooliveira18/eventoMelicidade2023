@@ -11,6 +11,9 @@ body{
 .txt_titulo{
     font-size: 13px;
 }
+.bd_consultoriaMenor{
+    margin-left: -50%;
+}
 .imgIcone{
     width: 28px;
     margin-right: 15px;
@@ -38,7 +41,6 @@ i{
 }
 
 .apresentacaoEvento{
-    background: #cecece;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +51,7 @@ i{
     width: 100%;
     overflow: hidden;
     color: #fff;
+    margin-top: -50px;
 }
 .conteudo{
     z-index: 1;
@@ -159,7 +162,7 @@ i{
     font-size: 28px;
 }
 .Evento{
-    background-color: #2B417C;
+    background-color: #0F1A45;
     color: #fff;
 }
 .conteudoParaQuem{
@@ -270,6 +273,8 @@ i{
 .carousel-control-next, .carousel-control-prev {
     position: absolute;
     top: 410px;
+    margin-left: 25%;
+    margin-right: 25%;
     bottom: 0;
     z-index: 1;
     display: flex;
@@ -374,8 +379,11 @@ i{
     border: none;
     margin-top: 5%;
     background: #BABABA;
+    transition: all .2s;
 }
-
+.botaoQuero:hover{
+    background: #a7a6a6;
+}
 .perguntarFrequentes{
     background-color: #DFDFDF;
     padding: 16px 80px;
@@ -457,6 +465,21 @@ i{
     }
 }
 
+@media (min-width:1400px) {
+    .conteudoParaQuem {
+        max-width: 1400px;
+    }
+    .rowDescricaoEvento {
+        margin-left: 11%;
+    }
+    .conteudo {
+        max-width: 1300px;
+    }
+    .containerImagensDescricao{
+        max-width: 1300px;
+    }
+}
+
 @media (max-width:768px) {
     .col_mapa{
         margin-left: -17%;
@@ -530,7 +553,7 @@ i{
     }
     .carousel-control-next, .carousel-control-prev {
         position: absolute;
-        top: 650px;
+        top: 690px;
         bottom: 0;
         z-index: 1;
         display: flex;
