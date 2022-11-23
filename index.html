@@ -252,7 +252,7 @@
                   <div class="carousel-item active">
                     <div class="row">
                         <div class="col-md-3 col-12">
-                            <img src="https://i.postimg.cc/MX2Jhb0m/633b2acfb1e38300f58c03ac-lideranca.png" class="d-block w-100" alt="...">
+                            <img src="imagens-site/programação-11.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="col-md-7 col-12 mx-md-5 mx-0 txt_carrosel">
                             <h3>Victor</h3>
@@ -263,7 +263,7 @@
                   <div class="carousel-item">
                     <div class="row">
                         <div class="col-md-3 col-12">
-                            <img src="https://i.postimg.cc/pLPLrR8Y/633b2acfb1e3834c608c03ae-estrategia.jpg" class="d-block w-100" alt="...">
+                            <img src="imagens-site/programação-12.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="col-md-7 col-12 mx-md-5 mx-0 txt_carrosel">
                             <h3>Carla</h3>
@@ -517,8 +517,16 @@ R.  Ângelo Piva, 144 - Pres. Altino, Osasco - SP
         </div>
     </div>
     
-    <div>
-        <a href="https://api.whatsapp.com/send?phone=554797260569" class="float" target="_blank">
+  
+    <div class="floatDuvida" id="floatDuvida" style="display: none;">
+        <img src="imagens-site/programação-09.png" alt="" class="imgAlgumaDuvida">
+        <button class="fechar" id="fecharDuvida" onclick="fecharDuvida();">x</button>
+        <span class="ficouComDuvida">Ficou com alguma dúvida?</span><br>
+        <span class="vamosTeAjudar">Vamos te ajudar</span>
+    </div>
+
+    <div class="float">
+        <a href="https://api.whatsapp.com/send?phone=554797260569" target="_blank">
             <img id="hs-cta-img-f2fb66a6-b285-45f0-b385-5c037ce5aeb5" class="hs-cta-img " style="border-width: 0px; " mce_noresize="1" alt="Nova call to action" height="62" width="80" src="https://7186301.fs1.hubspotusercontent-na1.net/hubfs/7186301/whats-btn-2.svg">    
         </a>
     </div>
@@ -526,6 +534,16 @@ R.  Ângelo Piva, 144 - Pres. Altino, Osasco - SP
 </body>
 </html>
 <script>
+                
+ 
+        setTimeout(() => {
+            document.getElementById('floatDuvida').style.display = 'block';
+        },5000);
+
+        function fecharDuvida(){
+                document.getElementById('floatDuvida').style.display = 'none';
+        }
+
         function abrePergunta1(){
             
             $('#botaoX1').toggleClass('rotate-45');
