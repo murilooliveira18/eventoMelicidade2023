@@ -91,7 +91,7 @@ i{
     font-size: 24px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-left: 11%;
+    margin-left: 10%;
 }
 .rowDescricaoEvento{
     margin-left: 11%;
@@ -126,7 +126,7 @@ i{
 }
 
 .rowImagensDescricao{
-    margin-top: -124px;
+    margin-top: -105px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -264,9 +264,7 @@ i{
     top: -7.5%;
 }
 
-.txt_carrosel{
-    margin-top: 5%;
-}
+
 .setaBaixo {
     width: 100px;
     position: absolute;
@@ -331,8 +329,9 @@ i{
 .marginRCarrousel{
     margin-right: 530px;
 }
+
 .txt_carrosel{
-    margin-top: 5%;
+    font-size: 14px;
 }
 
 .secaoPreparacao{
@@ -376,7 +375,6 @@ i{
     text-align: center;
 }
 .span_corpo{
-    opacity: 0.2;
     font-size: 83px;
     font-weight: bold;
     padding: 10px;
@@ -430,7 +428,7 @@ i{
 	margin-top:16px;
 }
 .imgLineUP{
-    width: 150px;
+    width: 200px;
 }
 .fundoCima{
     width: 130px;
@@ -462,6 +460,72 @@ i{
 .logoEvento{
     margin-left: 20%;
 }
+
+.imgProgramacao{
+    width: 700px;
+}
+
+.botaoQuero {
+    -webkit-animation: pulse 1s ease infinite;
+    -moz-animation: pulse 1s ease infinite;
+    -ms-animation: pulse 1s ease infinite;
+    -o-animation: pulse 1s ease infinite;
+    animation: pulse 1s ease infinite;
+  }
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    25% {
+      -webkit-transform: scale(1.1);
+    }
+    50% {
+      -webkit-transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+  @-moz-keyframes pulse {
+    0% {
+      -moz-transform: scale(1);
+    }
+    25% {
+      -moz-transform: scale(1.1);
+    }
+    50% {
+      -moz-transform: scale(1);
+    }
+    100% {
+      -moz-transform: scale(1);
+    }
+  }
+  @-ms-keyframes pulse {
+    0% {
+      -ms-transform: scale(1);
+    }
+    25% {
+      -ms-transform: scale(1.1);
+    }
+    50% {
+      -ms-transform: scale(1);
+    }
+    100% {
+      -ms-transform: scale(1);
+    }
+  }
+  @-o-keyframes pulse {
+    
+    0% { -o-transform: scale(1); }
+    25% { -o-transform: scale(1.1); }
+    50% { -o-transform: scale(1); }
+    100% { -o-transform: scale(1); } 
+  }
+  @keyframes pulse { 
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
 @media (min-width:1600px) {
     .conteudo{
         min-width: 1600px;
@@ -506,18 +570,24 @@ i{
         margin-left: 0%;
     }
     .conteudoParaQuem {
-        max-width: 1400px;
+        max-width: 1300px;
     }
     
     .conteudo {
-        max-width: 1300px;
+        max-width: 1400px;
     }
     .containerImagensDescricao{
         max-width: 1300px;
     }
+    .conteudoConhecaEvento{
+        max-width: 1400px;
+    }
 }
 
 @media (max-width:768px) {
+    .imgProgramacao{
+        width: 400px;
+    }
     .marginLCarrousel{
         margin-left: 0px;
     }
