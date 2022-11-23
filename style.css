@@ -512,13 +512,12 @@ i{
     .setaBaixo {
         width: 100px;
         position: absolute;
-        left: -15%;
-        bottom: -7%;
+        bottom: 7%;
     }
     .setaTopo {
         width: 100px;
         position: absolute;
-        right: -17%;
+        right: 0%;
         top: -9%;
     }
     .carousel-indicators{
@@ -571,5 +570,14 @@ i{
     .col_img{
         display: flex;
         justify-content: left;
+    }
+    .conteudoIngressos{
+        padding: 0;
+    }
+    .block {
+        height: 380px;
+    }
+    .perguntarFrequentes {
+        padding: 0;
     }
 }
