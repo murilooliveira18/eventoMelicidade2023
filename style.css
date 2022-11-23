@@ -454,6 +454,10 @@ i{
     display: flex;
     justify-content: center;
 }
+
+.logoEvento{
+    margin-left: 20%;
+}
 @media (min-width:1600px) {
     .conteudo{
         min-width: 1600px;
@@ -461,6 +465,18 @@ i{
 }
 
 @media (min-width:1500px) {
+    .logoEvento{
+        margin-left: 0%;
+    }
+    .span_ultimasVagas {
+        margin-left: 0%;
+    }
+    .rowImagensDatas {
+        margin-left: 16%;
+    }
+    .rowDescricaoEvento {
+        margin-left: 0%;
+    }
     .conteudo{
         min-width: 1500px;
     }
@@ -470,12 +486,25 @@ i{
 }
 
 @media (min-width:1400px) {
+    .logoEvento{
+        margin-left: 0%;
+    }
+    .span_ultimasVagas {
+        margin-left: 0%;
+    }
+    .rowImagensDatas {
+        margin-left: 16%;
+    }
+    .rowDescricaoEvento {
+        margin-left: 0%;
+    }
+    .rowDescricaoEvento {
+        margin-left: 0%;
+    }
     .conteudoParaQuem {
         max-width: 1400px;
     }
-    .rowDescricaoEvento {
-        margin-left: 11%;
-    }
+    
     .conteudo {
         max-width: 1300px;
     }
