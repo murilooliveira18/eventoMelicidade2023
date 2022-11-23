@@ -6,6 +6,12 @@
     padding: 0;
 }
 
+.promocao{
+    display: none;
+}
+.promocao.mostrar{
+    display: flex;
+}
 #countdown_dashboard{
     padding: 0 130px;
 }
@@ -32,11 +38,52 @@ i{
     background: #A8A9AE;
     padding: 0 40px;
 }
+.promocao{
+    background: #A8A9AE;
+    padding: 20px 40px;
+    z-index: 9999;
+    position: fixed;
+}
+.contadorDeTempo{
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+}
 
+.p_promocao{
+    color: #000;
+    font-size: 14px;
+}
+.txt_parabens{
+    font-size: 16px;
+    color: #fff;
+}
+
+.saibaMais{
+    border-radius: 20px;
+    width: 250px;
+    padding: 10px 0px;
+    background: #0f1a45;
+    color: #fff;
+}
+
+.saibaMais:hover{
+    animation: pulse 1s ease infinite;
+}
+.botaoFechar{
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    background: none;
+    padding: 0px 10px;
+}
 .horario{
     color: #fff;
 }
 .span_horario{
+    font-size: 28px;
+}
+#spanRelogio{
     font-size: 28px;
 }
 .p_horario{
@@ -456,8 +503,10 @@ i{
 	margin-top:16px;
 }
 .imgLineUP{
-    width: 200px;
+    width: 250px;
 }
+
+
 .fundoCima{
     width: 100px;
     left: 0%;
@@ -490,6 +539,21 @@ i{
 
 .imgProgramacao{
     width: 700px;
+    position: relative;
+    left: 0px;
+    z-index: 1;
+}
+
+.fundoPontilhado1{
+    width: 300px;
+    position: relative;
+    left: 195px;
+}
+
+.fundoPontilhado2{
+    width: 300px;
+    position: relative;
+    right: 195px;
 }
 
 .imgProgramacao:hover{
@@ -649,6 +713,12 @@ i{
 }
 
 @media (max-width:768px) {
+    .fundoPontilhado1 {
+        width: 100px;
+    }
+    .fundoPontilhado2 {
+        width: 100px;
+    }
     .float {
         bottom: 10px;
     }
