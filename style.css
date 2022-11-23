@@ -5,28 +5,35 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background: #F0F0F0;
+}
+.txt_titulo{
+    font-size: 13px;
+}
 .imgIcone{
     width: 28px;
     margin-right: 15px;
 }
+
 i{
     color: #B1504D;
 }
 
 .contador{
     background: #A8A9AE;
+    padding: 0 40px;
 }
 
 .horario{
     color: #fff;
 }
 .span_horario{
-    font-size: 24px;
+    font-size: 28px;
 }
 .p_horario{
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
     color: #000;
 }
 
@@ -46,28 +53,30 @@ i{
 .conteudo{
     z-index: 1;
     position: relative;
+    max-width: 1200px;
+    padding: 48px 40px;
 }
 .conteudoApresentacao video{
     position: absolute;
-    top: 81px;
+    top: 80px;
     left: 0;
     object-fit: cover;
     width: 100%;
-    height: 577px;
+    height: 604px;
     opacity: .3;
 }
 .camadaVideo {
     position: absolute;
     left: 0%;
     top: 81px;
-    height: 577px;
+    height: 604px;
     right: 0%;
     bottom: 0%;
-    background-color: #172E6D;
+    background-color: #0f1a45;
   }
 
   .paddingBottom{
-    padding-bottom: 100px;
+    padding-bottom: 30px;
   }
 .span_ultimasVagas{
     padding-top: 0px;
@@ -75,8 +84,15 @@ i{
     font-size: 24px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-left: 11%;
+}
+.rowDescricaoEvento{
+    margin-left: 11%;
 }
 
+.rowImagensDatas {
+    margin-left: 20%;
+}
 .div_data{
     display: flex;
     align-items: center;
@@ -97,12 +113,13 @@ i{
     font-size: 16px;
 }
 .containerImagensDescricao{
-    padding: 0 110px;
+    padding: 16px 40px;
+    max-width: 1200px;
+    background: #F0F0F0;
 }
 
-
 .rowImagensDescricao{
-    margin-top: -77px;
+    margin-top: -124px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -111,7 +128,8 @@ i{
 
 .conhecaEvento{
     background-image: url('https://i.postimg.cc/x8YHBQbx/1609274754205.png');
-    min-height: 350px;
+    min-height: 700px;
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,10 +139,10 @@ i{
 }
 
 .camadaEvento{
-    background: #172E6D;
+    background-image: linear-gradient(#121324, #0A0B12);
     width: 100%;
-    height: 557px;
-    opacity: 0.6;
+    height: 700px;
+    opacity: 0.7;
     position: absolute;
     z-index: 1;
 }
@@ -133,6 +151,8 @@ i{
     position: relative;
     z-index: 99;
     color: #fff;
+    padding: 96px 20px 20px 96px;
+    max-width: 1600px;
 }
 
 .span_dataEvento{
@@ -142,22 +162,25 @@ i{
     background-color: #2B417C;
     color: #fff;
 }
-
+.conteudoParaQuem{
+    max-width: 1300px;
+    padding: 16px 90px;
+}
 .paraQuemE{
-    margin-top: 7%;
+    margin-top: 3%;
 }
 .h2confira{
     font-size: 40px;
 }
 .span_dataConfira{
-    font-size: 28px;
+    font-size: 24px;
 }
 .carousel-control-next-icon {
-    background-image: url('https://i.postimg.cc/kGJH01LC/seta-direita.png');
+    background-image: url('https://i.postimg.cc/nLjr3jWH/proximo-2.png');
 }
 
 .carousel-control-prev-icon{
-    background-image: url('https://i.postimg.cc/1tP7F7mF/seta-esquerda.png');
+    background-image: url('https://i.postimg.cc/K8dxv992/anterior.png');
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
     display: inline-block;
@@ -172,8 +195,12 @@ i{
     color: #fff;
     height: 100%;
     position: relative;
+    margin-top: 150px;
 }
-
+.containerOQueDizem{
+    max-width: 1200px;
+    padding: 16px 40px;
+}
 .imagemTopo{
     position: absolute;
     left: 0;
@@ -239,27 +266,10 @@ i{
     left: -4%;
     bottom: -14%;
 }
-.carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 3px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #000;
-    background-clip: padding-box;
-    border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .6s ease;
-}
+
 .carousel-control-next, .carousel-control-prev {
     position: absolute;
-    top: 400px;
+    top: 410px;
     bottom: 0;
     z-index: 1;
     display: flex;
@@ -277,7 +287,7 @@ i{
 .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: -180px;
+    bottom: -215px;
     left: 0;
     z-index: 2;
     display: flex;
@@ -298,15 +308,16 @@ i{
     margin-left: 3px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000;
+    background-color: #C2C2C2;
     background-clip: padding-box;
     border: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .6s ease;
+    transition: opacity .3s ease;
     border-radius: 100%;
+
 }
+
 .txt_carrosel{
     margin-top: 5%;
 }
@@ -318,6 +329,10 @@ i{
 
 .sombraBox{
     box-shadow: 0 -12px 50px -20px rgb(0 0 0 / 18%);
+}
+
+.conteudoIngressos{
+    padding: 16px 40px;;
 }
 
 .garantaAgora{
@@ -349,8 +364,9 @@ i{
 }
 .span_corpo{
     opacity: 0.2;
-    font-size: 90px;
+    font-size: 83px;
     font-weight: bold;
+    padding: 10px;
 }
 .botaoQuero{
     border-radius: 20px;
@@ -362,6 +378,7 @@ i{
 
 .perguntarFrequentes{
     background-color: #DFDFDF;
+    padding: 16px 80px;
 }
 
 .perguntasFrequentesTitulo{
@@ -423,6 +440,21 @@ i{
 .conteudoPerguntas{
     margin-top: -60%;
     background: #DFDFDF;
+}
+
+@media (min-width:1600px) {
+    .conteudo{
+        min-width: 1600px;
+    }
+}
+
+@media (min-width:1500px) {
+    .conteudo{
+        min-width: 1500px;
+    }
+    .conteudoPerguntas {
+        margin-top: -40%;
+    }
 }
 
 @media (max-width:768px) {
