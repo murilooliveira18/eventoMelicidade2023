@@ -438,12 +438,12 @@ i{
     padding: 5px 15px;    
     border: none;
     margin-top: 5%;
-    background: #BABABA;
+    background: #616060;
     transition: all .2s;
+    color: #fff;
 }
 .botaoQuero:hover{
-    background: #616060;
-    color: #fff;
+    background: #000000;
 }
 .perguntarFrequentes{
     background-color: #DFDFDF;
@@ -504,6 +504,17 @@ i{
 }
 .imgLineUP{
     width: 250px;
+}
+
+.imgLineUP:hover{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -o-transform: scale(1.1)  ;
+    -ms-transform: scale(1.1)  ;
+    transform: scale(1.1) ;
 }
 
 
