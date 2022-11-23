@@ -857,4 +857,7 @@ i{
     #countdown_dashboard{
         padding: 0;
     }
+    .saibaMais {
+        width: 310px;
+    }
 }
