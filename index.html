@@ -22,7 +22,26 @@
         }
     </style>
 </head>
-<body>
+<body onload="relogio();">
+    <div class="container-fluid promocao mb-5" id="promocao">
+        <div class="row g-0 d-flex justify-content-between align-items-center">
+            <div class="col-5 text-center">
+                <span class="fw-bold txt_parabens">Parabéns! Aproveite seu 50% de desconto clicando no botão e comprando agora na Pré venda!</span>
+            </div>
+            <div class="col-2 contadorDeTempo text-center d-flex justify-content-center" id="countdown_promocao">
+                <div class="row">
+                    <div class="minutos">
+                        <span id="spanRelogio"></span>
+                        <span class="span_horario" id="minutesPromocao"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 botaoSaibaMais">
+                <a href="#ingressos"><input type="button" value="Saiba Mais" class="saibaMais"></a>
+                <button class="botaoFechar" id="botaoFechar">x</button>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid contador">
         <div class="row g-0">
             <div class="col-12 d-flex justify-content-center">
@@ -68,7 +87,7 @@
 
                 <div class="row g-0 d-flex justify-content-center">
                     <div class="col-md-3 col-4">
-                        <img src="imagens-site/SELO IMERSÃO APROVADO-01.png" alt="bd-consultoria" class="w-100 logoEvento">
+                        <img src="imagens-site/SELO IMERSÃO APROVADO-01.png" alt="bd-consultoria" class="w-100 logoEvento" id="logoEvento">
                     </div>
                 </div>
                 <div class="row g-0">
@@ -92,7 +111,7 @@
                     <div class="col-xl-7 col-md-7 col-12 col_mapa">
                         <div class="div_data">
                             <img src="https://i.postimg.cc/J7TVFvRz/mapa-icone.png" class="imgIcone">
-                            <span class="span_data">Melicidade - Sede oficial do Mercado Livre Melicidade</span>
+                            <span class="span_data">Melicidade - Sede do Mercado Livre no Brasil</span>
                         </div>
                     </div>
                 </div>
@@ -206,25 +225,39 @@
             </div>
             <div class="row g-0 mt-5">
                 <div class="col-12 mt-1 mb-1 d-flex justify-content-center">
-                    <img src="imagens-site/programação-01.png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado1">
+                    <img src="imagens-site/PROGRAMAÇÃO  (1).png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado2">
                 </div>
                 <div class="col-12 mt-1 mb-1 d-flex justify-content-center">
-                    <img src="imagens-site/programação-02.png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado1">
+                    <img src="imagens-site/PROGRAMAÇÃO  (2).png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado2">
                 </div>
                 <div class="col-12 mt-1 mb-1 d-flex justify-content-center">
-                    <img src="imagens-site/programação-03.png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado1">
+                    <img src="imagens-site/PROGRAMAÇÃO  (3).png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado2">
                 </div>
                 <div class="col-12 mt-1 mb-1 d-flex justify-content-center">
-                    <img src="imagens-site/programação-04.png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado1">
+                    <img src="imagens-site/PROGRAMAÇÃO  (4).png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado2">
                 </div>
                 <div class="col-12 mt-1 mb-1 d-flex justify-content-center">
-                    <img src="imagens-site/programação-05.png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado1">
+                    <img src="imagens-site/PROGRAMAÇÃO  (5).png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado2">
                 </div>
                 <div class="col-12 mt-1 mb-1 d-flex justify-content-center">
-                    <img src="imagens-site/programação-06.png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado1">
+                    <img src="imagens-site/PROGRAMAÇÃO  (6).png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado2">
                 </div>
                 <div class="col-12 mt-1 mb-5 d-flex justify-content-center">
-                    <img src="imagens-site/programação-07.png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado1">
+                    <img src="imagens-site/PROGRAMAÇÃO  (7).png" alt="" class="imgProgramacao">
+                    <img src="imagens-site/FUNDO PONTILHADO  (1).png" alt="" class="fundoPontilhado2">
                 </div>
             </div>
         
@@ -308,18 +341,18 @@
                 </div>
             </div>
             <div class="row g-0 mt-5 d-flex justify-content-center">
-                <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <div class="col-md-3 col-12 mx-md-2 mx-0 mb-3 text-center">
                     <img src="imagens-site/CONSULTORES (7).png"  class="imgLineUP">
                     <p class="nomeIntegrante mt-3">Ciro Gomes</p>
                     <p class="cargoIntegrante">Mercado Ads</p>
                 </div>
-                <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <div class="col-md-3 col-12 mx-md-2 mx-0 mb-3 text-center">
                     <img src="imagens-site/CONSULTORES (6).png"  class="imgLineUP">
                     <p class="nomeIntegrante mt-3">André Santos</p>
                     <p class="cargoIntegrante">Mercado Livre</p>
                 </div>
 
-                <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <div class="col-md-3 col-12 mx-md-2 mx-0 mb-3 text-center">
                     <img src="imagens-site/CONSULTORES (8).png"  class="imgLineUP">
                     <p class="nomeIntegrante mt-3">Juliana Bispo</p>
                     <p class="cargoIntegrante">Mercado Shops</p>
@@ -327,17 +360,17 @@
             </div>
 
             <div class="row g-0 mt-5 d-flex justify-content-center">
-                <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <div class="col-md-3 col-12 mx-md-2 mx-0 mb-3 text-center">
                     <img src="imagens-site/CONSULTORES (1).png"  class="imgLineUP">
                     <p class="nomeIntegrante mt-3">Bruno Darolt</p>
                     <p class="cargoIntegrante">CEO da BD Consultoria</p>
                 </div>
-                <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <div class="col-md-3 col-12 mx-md-2 mx-0 mb-3 text-center">
                     <img src="imagens-site/CONSULTORES (2).png"  class="imgLineUP">
                     <p class="nomeIntegrante mt-3">Jorge Uberson</p>
                     <p class="cargoIntegrante">Head de Consultoria</p>
                 </div>
-                <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <div class="col-md-3 col-12 mx-md-2 mx-0 mb-3 text-center">
                     <img src="imagens-site/CONSULTORES (4).png"  class="imgLineUP">
                     <p class="nomeIntegrante mt-3">Wilian Mendes</p>
                     <p class="cargoIntegrante">Consultor Estratégico</p>
@@ -347,7 +380,7 @@
             </div>
             <div class="row g-0 mt-5 d-flex justify-content-center">
                
-                <div class="col-md-3 col-12 mx-md-5 mx-0 mb-3 text-center">
+                <div class="col-md-3 col-12 mx-md-2 mx-0 mb-3 text-center">
                     <img src="imagens-site/CONSULTORES (5).png"  class="imgLineUP">
                     <p class="nomeIntegrante mt-3">Rodrigo Crepaldi</p>
                     <p class="cargoIntegrante">Consultor Estratégico</p>
@@ -387,7 +420,7 @@
     
     <div class="container-fluid sombraBox">
 
-        <div class="conteudoIngressos">
+        <div class="conteudoIngressos" id="ingressos">
             <div class="row g-0">
                 <div class="col-12 mt-5 d-flex justify-content-center text-center">
                     <h3 class="garantaAgora"><b>Garanta agora mesmo</b> sua participação no Evento</h3>
@@ -413,9 +446,7 @@
                 <div class="col-12 mb-5 d-flex justify-content-center">
                     <div class="div_data">
                         <img src="https://i.postimg.cc/J7TVFvRz/mapa-icone.png" class="imgIcone">
-                        <span class="span_dataGaranta"> Melicidade - Sede oficial do Mercado Livre 
-R.  Ângelo Piva, 144 - Pres. Altino, Osasco - SP
-</span>
+                        <span class="span_dataGaranta"> Melicidade - Sede oficial do Mercado Livre R.  Ângelo Piva, 144 - Pres. Altino, Osasco - SP</span>
                     </div>
                 </div>
             </div>
@@ -532,14 +563,60 @@ R.  Ângelo Piva, 144 - Pres. Altino, Osasco - SP
 </body>
 </html>
 <script>
-                
- 
+
+
+    function iniciaPopUp(popupID){
+        if(localStorage.fechapopup !== popupID){
+            const popup = document.getElementById(popupID);
+            if(popupID){
+                popup.classList.add('mostrar');
+                popup.addEventListener('click' , (e) =>{
+                    if(e.target.className == 'botaoFechar'){
+                        popup.classList.remove('mostrar');
+                        localStorage.fechapopup = popupID;
+                    }
+                })
+            }
+        }
+    }
+
+
+    document.addEventListener('scroll', () => {
+        if (window.pageYOffset > 150) {
+            iniciaPopUp('promocao');
+            var min, seg;		min = 20;		seg = 1		
+            function relogio(){			
+                if((min > 0) || (seg > 0)){				
+                    if(seg == 0){					
+                        seg = 59;					
+                        min = min - 1	
+                    }				
+                    else{					
+                        seg = seg - 1;				
+                    }				
+                    if(min.toString().length == 1){					
+                        min = "0" + min;				
+                    }				
+                    if(seg.toString().length == 1){					
+                        seg = "0" + seg;				
+                    }				
+                    document.getElementById('spanRelogio').innerHTML = min + ":" + seg;				
+                    setTimeout('relogio()', 1000);			
+                }			
+                else{				
+                    document.getElementById('spanRelogio').innerHTML = "00:00";			
+                }		
+            }	
+        }
+    })
+    
+
         setTimeout(() => {
             document.getElementById('floatDuvida').style.display = 'block';
         },5000);
 
         function fecharDuvida(){
-                document.getElementById('floatDuvida').style.display = 'none';
+            document.getElementById('floatDuvida').style.display = 'none';
         }
 
         function abrePergunta1(){
@@ -598,6 +675,29 @@ R.  Ângelo Piva, 144 - Pres. Altino, Osasco - SP
                 document.getElementById('pergunta4').style.display = 'none';
             }
         }
+        var min, seg; min = 5;		seg = 1		
+        function relogio(){			
+            if((min > 0) || (seg > 0)){				
+                if(seg == 0){					
+                    seg = 59;					
+                    min = min - 1	
+                }				
+                else{					
+                    seg = seg - 1;				
+                }				
+                if(min.toString().length == 1){					
+                    min = "0" + min;				
+                }				
+                if(seg.toString().length == 1){					
+                    seg = "0" + seg;				
+                }				
+                document.getElementById('spanRelogio').innerHTML = min + ":" + seg;				
+                setTimeout('relogio()', 1000);			
+            }			
+            else{				
+                document.getElementById('spanRelogio').innerHTML = "00:00";			
+            }		
+        }	
 
         function countdown(){
             var now = new Date();
