@@ -16,7 +16,8 @@ body{
     font-size: 13px;
 }
 .bd_consultoriaMenor{
-    margin-left: -50%;
+    margin-left: -15%;
+    width: 50%;
 }
 .imgIcone{
     width: 28px;
@@ -379,6 +380,12 @@ i{
     font-weight: bold;
     padding: 10px;
 }
+.span_emBreve{
+    font-size: 83px;
+    font-weight: bold;
+    padding: 10px;
+    opacity: .2;
+}
 .botaoQuero{
     border-radius: 20px;
     padding: 5px 15px;    
@@ -388,7 +395,8 @@ i{
     transition: all .2s;
 }
 .botaoQuero:hover{
-    background: #a7a6a6;
+    background: #616060;
+    color: #fff;
 }
 .perguntarFrequentes{
     background-color: #DFDFDF;
@@ -451,9 +459,8 @@ i{
     width: 200px;
 }
 .fundoCima{
-    width: 130px;
+    width: 100px;
     left: 0%;
-    top: 0%;
     right: auto;
     bottom: 0%;
     opacity: 0.5;
@@ -463,14 +470,14 @@ i{
     transform-style: preserve-3d;
     position: relative;
     z-index: 2;
+    top: -160px;
 }
 .rowLogoBD{
     display: flex;
     justify-content: center;
 }
 .conteudoPerguntas{
-    margin-top: -60%;
-    background: #DFDFDF;
+    margin-top: -70%;
 }
 .col_img{
     display: flex;
@@ -485,6 +492,23 @@ i{
     width: 700px;
 }
 
+.imgProgramacao:hover{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -o-transform: scale(1.1)  ;
+    -ms-transform: scale(1.1)  ;
+    transform: scale(1.1) ;
+}
+.botaoQuero1lote{
+    border-radius: 20px;
+    padding: 5px 15px;    
+    border: none;
+    margin-top: 5%;
+    background: #BABABA;
+}
 .botaoQuero {
     -webkit-animation: pulse 1s ease infinite;
     -moz-animation: pulse 1s ease infinite;
