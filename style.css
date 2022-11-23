@@ -273,8 +273,6 @@ i{
 .carousel-control-next, .carousel-control-prev {
     position: absolute;
     top: 410px;
-    margin-left: 25%;
-    margin-right: 25%;
     bottom: 0;
     z-index: 1;
     display: flex;
@@ -322,7 +320,13 @@ i{
     border-radius: 100%;
 
 }
+.marginLCarrousel{
+    margin-left: 530px;
+}
 
+.marginRCarrousel{
+    margin-right: 530px;
+}
 .txt_carrosel{
     margin-top: 5%;
 }
@@ -481,6 +485,13 @@ i{
 }
 
 @media (max-width:768px) {
+    .marginLCarrousel{
+        margin-left: 0px;
+    }
+    
+    .marginRCarrousel{
+        margin-right: 0px;
+    }
     .col_mapa{
         margin-left: -17%;
     }
