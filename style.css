@@ -5,6 +5,10 @@
     margin: 0;
     padding: 0;
 }
+
+#countdown_dashboard{
+    padding: 0 130px;
+}
 body{
     background: #F0F0F0;
 }
@@ -638,6 +642,9 @@ i{
         height: 380px;
     }
     .perguntarFrequentes {
+        padding: 0;
+    }
+    #countdown_dashboard{
         padding: 0;
     }
 }
