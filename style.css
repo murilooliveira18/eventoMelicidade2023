@@ -1,874 +1,884 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+         *{
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-.promocao{
-    display: none;
-}
-.promocao.mostrar{
-    display: flex;
-}
-#countdown_dashboard{
-    padding: 0 130px;
-}
-body{
-    background: #F0F0F0;
-}
-.txt_titulo{
-    font-size: 13px;
-}
-.bd_consultoriaMenor{
-    margin-left: -15%;
-    width: 50%;
-}
-.imgIcone{
-    width: 28px;
-    margin-right: 15px;
-}
+        .botaoX{
+            transform: rotate(0eg);
+            transition: all ease .3s;
+        }
 
-i{
-    color: #B1504D;
-}
+        .rotate-45{
+            transform: rotate(45deg);
+            transition: all ease .3s;
+        }
 
-.contador{
-    background: #A8A9AE;
-    padding: 0 40px;
-}
-.promocao{
-    background: #A8A9AE;
-    padding: 20px 40px;
-    z-index: 9999;
-    position: fixed;
-}
-.contadorDeTempo{
-    background: #fff;
-    color: #000;
-    border-radius: 20px;
-}
+        .promocao{
+            display: none;
+        }
+        .promocao.mostrar{
+            display: flex;
+        }
+        #countdown_dashboard{
+            padding: 0 130px;
+        }
+        body{
+            background: #F0F0F0;
+        }
+        .txt_titulo{
+            font-size: 13px;
+        }
+        .bd_consultoriaMenor{
+            margin-left: -15%;
+            width: 50%;
+        }
+        .imgIcone{
+            width: 28px;
+            margin-right: 15px;
+        }
 
-.p_promocao{
-    color: #000;
-    font-size: 14px;
-}
-.txt_parabens{
-    font-size: 16px;
-    color: #fff;
-}
+        i{
+            color: #B1504D;
+        }
 
-.saibaMais{
-    border-radius: 20px;
-    width: 250px;
-    padding: 10px 0px;
-    background: #0f1a45;
-    color: #fff;
-}
+        .contador{
+            background: #A8A9AE;
+            padding: 0 40px;
+        }
+        .promocao{
+            background: #A8A9AE;
+            padding: 20px 40px;
+            z-index: 9999;
+            position: fixed;
+        }
+        .contadorDeTempo{
+            background: #fff;
+            color: #000;
+            border-radius: 20px;
+        }
 
-.saibaMais:hover{
-    animation: pulse 1s ease infinite;
-}
-.botaoFechar{
-    font-size: 20px;
-    border: none;
-    color: #fff;
-    background: none;
-    padding: 0px 10px;
-}
-.horario{
-    color: #fff;
-}
-.span_horario{
-    font-size: 28px;
-}
-#spanRelogio{
-    font-size: 28px;
-}
-.p_horario{
-    margin: 0;
-    font-size: 12px;
-    color: #000;
-}
+        .p_promocao{
+            color: #000;
+            font-size: 14px;
+        }
+        .txt_parabens{
+            font-size: 16px;
+            color: #fff;
+        }
 
-.apresentacaoEvento{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .saibaMais{
+            border-radius: 20px;
+            width: 250px;
+            padding: 10px 0px;
+            background: #0f1a45;
+            color: #fff;
+        }
 
-.conteudoApresentacao{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    color: #fff;
-    margin-top: -50px;
-}
-.conteudo{
-    z-index: 1;
-    position: relative;
-    max-width: 1200px;
-    padding: 48px 40px;
-}
-.conteudoApresentacao video{
-    position: absolute;
-    top: 80px;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 604px;
-    opacity: .3;
-}
-.camadaVideo {
-    position: absolute;
-    left: 0%;
-    top: 81px;
-    height: 604px;
-    right: 0%;
-    bottom: 0%;
-    background-color: #0f1a45;
-  }
+        .saibaMais:hover{
+            animation: pulse 1s ease infinite;
+        }
+        .botaoFechar{
+            font-size: 20px;
+            border: none;
+            color: #fff;
+            background: none;
+            padding: 0px 10px;
+        }
+        .horario{
+            color: #fff;
+        }
+        .span_horario{
+            font-size: 28px;
+        }
+        #spanRelogio{
+            font-size: 28px;
+        }
+        .p_horario{
+            margin: 0;
+            font-size: 12px;
+            color: #000;
+        }
 
-  .paddingBottom{
-    padding-bottom: 30px;
-  }
-.span_ultimasVagas{
-    padding-top: 0px;
-    color: #fff;
-    font-size: 24px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-left: 10%;
-}
-.rowDescricaoEvento{
-    margin-left: 11%;
-}
+        .apresentacaoEvento{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.rowImagensDatas {
-    margin-left: 20%;
-}
-.div_data{
-    display: flex;
-    align-items: center;
-}
+        .conteudoApresentacao{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            color: #fff;
+            margin-top: -50px;
+        }
+        .conteudo{
+            z-index: 1;
+            position: relative;
+            max-width: 1200px;
+            padding: 48px 40px;
+        }
+        .conteudoApresentacao video{
+            position: absolute;
+            top: 80px;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 604px;
+            opacity: .3;
+        }
+        .camadaVideo {
+            position: absolute;
+            left: 0%;
+            top: 81px;
+            height: 604px;
+            right: 0%;
+            bottom: 0%;
+            background-color: #0f1a45;
+        }
 
-.span_data{
-    font-size: 16px;
-}
+        .paddingBottom{
+            padding-bottom: 30px;
+        }
+        .span_ultimasVagas{
+            padding-top: 0px;
+            color: #fff;
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-left: 10%;
+        }
+        .rowDescricaoEvento{
+            margin-left: 11%;
+        }
 
-.span_descricaoEvento{
-    color: #fff;
-    font-weight: bold;
-    font-size: 25px;
-}
+        .rowImagensDatas {
+            margin-left: 20%;
+        }
+        .div_data{
+            display: flex;
+            align-items: center;
+        }
 
-.span_legendaEvento{
-    color: #fff;
-    font-size: 16px;
-}
-.containerImagensDescricao{
-    padding: 16px 40px;
-    max-width: 1200px;
-    background: #F0F0F0;
-}
+        .span_data{
+            font-size: 16px;
+        }
 
-.rowImagensDescricao{
-    margin-top: -105px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 99;
-}
+        .span_descricaoEvento{
+            color: #fff;
+            font-weight: bold;
+            font-size: 25px;
+        }
 
-.conhecaEvento{
-    background-image: url('https://i.postimg.cc/x8YHBQbx/1609274754205.png');
-    min-height: 700px;
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0
-}
+        .span_legendaEvento{
+            color: #fff;
+            font-size: 16px;
+        }
+        .containerImagensDescricao{
+            padding: 16px 40px;
+            max-width: 1200px;
+            background: #F0F0F0;
+        }
 
-.camadaEvento{
-    background-image: linear-gradient(#121324, #0A0B12);
-    width: 100%;
-    height: 700px;
-    opacity: 0.7;
-    position: absolute;
-    z-index: 1;
-}
+        .rowImagensDescricao{
+            margin-top: -105px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 99;
+        }
 
-.conteudoConhecaEvento{
-    position: relative;
-    z-index: 99;
-    color: #fff;
-    padding: 96px 20px 20px 96px;
-    max-width: 1600px;
-}
+        .conhecaEvento{
+            background-image: url('https://i.postimg.cc/x8YHBQbx/1609274754205.png');
+            min-height: 700px;
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0
+        }
 
-.span_dataEvento{
-    font-size: 28px;
-}
-.Evento{
-    background-color: #0F1A45;
-    color: #fff;
-}
-.conteudoParaQuem{
-    max-width: 1300px;
-    padding: 16px 90px;
-}
-.paraQuemE{
-    margin-top: 3%;
-}
-.h2confira{
-    font-size: 40px;
-}
-.span_dataConfira{
-    font-size: 24px;
-}
-.carousel-control-next-icon {
-    background-image: url('https://i.postimg.cc/nLjr3jWH/proximo-2.png');
-}
+        .camadaEvento{
+            background-image: linear-gradient(#121324, #0A0B12);
+            width: 100%;
+            height: 700px;
+            opacity: 0.7;
+            position: absolute;
+            z-index: 1;
+        }
 
-.carousel-control-prev-icon{
-    background-image: url('https://i.postimg.cc/K8dxv992/anterior.png');
-}
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
-}
-.lineUp{
-    background-color: #0F1A45;
-    color: #fff;
-    height: 100%;
-    position: relative;
-    margin-top: 150px;
-}
-.containerOQueDizem{
-    max-width: 1200px;
-    padding: 16px 40px;
-}
-.imagemTopo{
-    position: absolute;
-    left: 0;
-    width: 115px;
-}
+        .conteudoConhecaEvento{
+            position: relative;
+            z-index: 99;
+            color: #fff;
+            padding: 96px 20px 20px 96px;
+            max-width: 1600px;
+        }
 
+        .span_dataEvento{
+            font-size: 28px;
+        }
+        .Evento{
+            background-color: #0F1A45;
+            color: #fff;
+        }
+        .conteudoParaQuem{
+            max-width: 1300px;
+            padding: 16px 90px;
+        }
+        .paraQuemE{
+            margin-top: 3%;
+        }
+        .h2confira{
+            font-size: 40px;
+        }
+        .span_dataConfira{
+            font-size: 24px;
+        }
+        .carousel-control-next-icon {
+            background-image: url('https://i.postimg.cc/nLjr3jWH/proximo-2.png');
+        }
 
-.imagemBaixo {
-    position: absolute;
-    width: 115px;
-    right: 0%;
-    bottom: 0;
-    transform: rotate(180deg);
-}
-
-.nomeIntegrante{
-    font-weight: bold;
-    text-align: center;
-    font-size: 18px;
-}
-
-.cargoIntegrante{
-    opacity: 0.7;
-    text-align: center;
-}
-
-.span_marque{
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.span_dataAgenda{
-    font-size: 32px;
-}
-.imgBorder:hover{
-    border-radius: 20px;
-    transition: all .2s;
-}
-
-.titulo{
-    font-size: 32px;
-    text-align: center;
-}
-
-.span_tituloCarrosel{
-    font-size: 32px;
-    text-align: center;
-    width: 60%;
-}
-.setaTopo{
-    width: 100px;
-    position: absolute;
-    right: -2.5%;
-    top: -7.5%;
-}
+        .carousel-control-prev-icon{
+            background-image: url('https://i.postimg.cc/K8dxv992/anterior.png');
+        }
+        .carousel-control-next-icon, .carousel-control-prev-icon {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 100% 100%;
+        }
+        .lineUp{
+            background-color: #0F1A45;
+            color: #fff;
+            height: 100%;
+            position: relative;
+            margin-top: 150px;
+        }
+        .containerOQueDizem{
+            max-width: 1200px;
+            padding: 16px 40px;
+        }
+        .imagemTopo{
+            position: absolute;
+            left: 0;
+            width: 115px;
+        }
 
 
-.setaBaixo {
-    width: 100px;
-    position: absolute;
-    left: -4%;
-    bottom: -14%;
-}
+        .imagemBaixo {
+            position: absolute;
+            width: 115px;
+            right: 0%;
+            bottom: 0;
+            transform: rotate(180deg);
+        }
 
-.carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 410px;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: 0 0;
-    border: 0;
-    opacity: .5;
-    transition: opacity .15s ease;
-}
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: -215px;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin-right: 15%;
-    margin-bottom: 1rem;
-    margin-left: 15%;
-    list-style: none;
-}
-.carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 15px;
-    height: 15px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #121212;
-    background-clip: padding-box;
-    border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    transition: opacity .3s ease;
-    border-radius: 100%;
+        .nomeIntegrante{
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+        }
 
-}
-.marginLCarrousel{
-    margin-left: 530px;
-}
+        .cargoIntegrante{
+            opacity: 0.7;
+            text-align: center;
+        }
 
-.marginRCarrousel{
-    margin-right: 530px;
-}
+        .span_marque{
+            font-weight: bold;
+            font-size: 40px;
+        }
 
-.txt_carrosel{
-    font-size: 14px;
-}
+        .span_dataAgenda{
+            font-size: 32px;
+        }
+        .imgBorder:hover{
+            border-radius: 20px;
+            transition: all .2s;
+        }
 
-.secaoPreparacao{
-    background: #eaeaea;
-    height: 1100px;
-}
+        .titulo{
+            font-size: 32px;
+            text-align: center;
+        }
 
-.sombraBox{
-    box-shadow: 0 -12px 50px -20px rgb(0 0 0 / 18%);
-}
-
-.conteudoIngressos{
-    padding: 16px 40px;;
-}
-
-.garantaAgora{
-    width: 50%;
-    font-size: 32px;
-}
-.span_dataGaranta{
-    font-size: 24px;
-}
-.span_dataParticipacao{
-    font-size: 24px;
-}
-.block{
-    border-radius: 20px;
-    height: 300px;
-    background-color: #CECECE;
-}
-.titulo{
-    border-radius: 20px 20px 0px 0px;
-    background-color: #E76353;
-}
-
-.span_titulo{
-    font-size: 18px;
-    font-weight: bold;
-}
-.corpo{
-    text-align: center;
-}
-.span_corpo{
-    font-size: 83px;
-    font-weight: bold;
-    padding: 10px;
-}
-.span_emBreve{
-    font-size: 83px;
-    font-weight: bold;
-    padding: 10px;
-    opacity: .2;
-}
-.botaoQuero{
-    border-radius: 20px;
-    padding: 5px 15px;    
-    border: none;
-    margin-top: 5%;
-    background: #616060;
-    transition: all .2s;
-    color: #fff;
-}
-.botaoQuero:hover{
-    background: #000000;
-}
-.perguntarFrequentes{
-    background-color: #DFDFDF;
-    padding: 16px 80px;
-}
-
-.perguntasFrequentesTitulo{
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.boxPergunta{
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 20px;
-    position: relative;
-    z-index: 99;
-    background: #DFDFDF;
-}
-.span_pergunta{
-    font-size: 20px;
-    font-weight: bold;
-}
-.float{
-	position:fixed;
-	height:60px;
-	bottom:60px;
-	right:40px;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-    z-index:100;
-}
-.fechar{
-    border: none;
-    font-size: 12px;
-    position: relative;
-    top: 0px;
-    top: -39px;
-    left: -30px;
-    background: transparent;
-    display: initial;
-    font-weight: bold;
-}
-.floatDuvida{
-    position:fixed;
-	height:60px;
-    bottom: 180px;
-    right: -150px;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-    z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-.imgLineUP{
-    width: 250px;
-}
-
-.imgLineUP:hover{
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -moz-transform: scale(1.1) ;
-    -webkit-transform: scale(1.1) ;
-    -o-transform: scale(1.1)  ;
-    -ms-transform: scale(1.1)  ;
-    transform: scale(1.1) ;
-}
+        .span_tituloCarrosel{
+            font-size: 32px;
+            text-align: center;
+            width: 60%;
+        }
+        .setaTopo{
+            width: 100px;
+            position: absolute;
+            right: -2.5%;
+            top: -7.5%;
+        }
 
 
-.fundoCima{
-    width: 100px;
-    left: 0%;
-    right: auto;
-    bottom: 0%;
-    opacity: 0.5;
-    -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
-    transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    position: relative;
-    z-index: 2;
-    top: -160px;
-}
-.rowLogoBD{
-    display: flex;
-    justify-content: center;
-}
-.conteudoPerguntas{
-    margin-top: -70%;
-}
-.col_img{
-    display: flex;
-    justify-content: center;
-}
+        .setaBaixo {
+            width: 100px;
+            position: absolute;
+            left: -4%;
+            bottom: -14%;
+        }
 
-.logoEvento{
-    margin-left: 20%;
-}
+        .carousel-control-next, .carousel-control-prev {
+            position: absolute;
+            top: 410px;
+            bottom: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            background: 0 0;
+            border: 0;
+            opacity: .5;
+            transition: opacity .15s ease;
+        }
+        .carousel-indicators {
+            position: absolute;
+            right: 0;
+            bottom: -215px;
+            left: 0;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin-right: 15%;
+            margin-bottom: 1rem;
+            margin-left: 15%;
+            list-style: none;
+        }
+        .carousel-indicators [data-bs-target] {
+            box-sizing: content-box;
+            flex: 0 1 auto;
+            width: 15px;
+            height: 15px;
+            padding: 0;
+            margin-right: 3px;
+            margin-left: 3px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #121212;
+            background-clip: padding-box;
+            border: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            transition: opacity .3s ease;
+            border-radius: 100%;
 
-.imgProgramacao{
-    width: 700px;
-    position: relative;
-    left: 0px;
-    z-index: 1;
-}
+        }
+        .marginLCarrousel{
+            margin-left: 530px;
+        }
 
-.fundoPontilhado1{
-    width: 300px;
-    position: relative;
-    left: 195px;
-}
+        .marginRCarrousel{
+            margin-right: 530px;
+        }
 
-.fundoPontilhado2{
-    width: 300px;
-    position: relative;
-    right: 195px;
-}
+        .txt_carrosel{
+            font-size: 14px;
+        }
 
-.imgProgramacao:hover{
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -moz-transform: scale(1.1) ;
-    -webkit-transform: scale(1.1) ;
-    -o-transform: scale(1.1)  ;
-    -ms-transform: scale(1.1)  ;
-    transform: scale(1.1) ;
-}
-.botaoQuero1lote{
-    border-radius: 20px;
-    padding: 5px 15px;    
-    border: none;
-    margin-top: 5%;
-    background: #BABABA;
-}
-.botaoQuero {
-    -webkit-animation: pulse 1s ease infinite;
-    -moz-animation: pulse 1s ease infinite;
-    -ms-animation: pulse 1s ease infinite;
-    -o-animation: pulse 1s ease infinite;
-    animation: pulse 1s ease infinite;
-  }
-@-webkit-keyframes pulse {
-    0% {
-      -webkit-transform: scale(1);
-    }
-    25% {
-      -webkit-transform: scale(1.1);
-    }
-    50% {
-      -webkit-transform: scale(1);
-    }
-    100% {
-      -webkit-transform: scale(1);
-    }
-  }
-  @-moz-keyframes pulse {
-    0% {
-      -moz-transform: scale(1);
-    }
-    25% {
-      -moz-transform: scale(1.1);
-    }
-    50% {
-      -moz-transform: scale(1);
-    }
-    100% {
-      -moz-transform: scale(1);
-    }
-  }
-  @-ms-keyframes pulse {
-    0% {
-      -ms-transform: scale(1);
-    }
-    25% {
-      -ms-transform: scale(1.1);
-    }
-    50% {
-      -ms-transform: scale(1);
-    }
-    100% {
-      -ms-transform: scale(1);
-    }
-  }
-  @-o-keyframes pulse {
-    
-    0% { -o-transform: scale(1); }
-    25% { -o-transform: scale(1.1); }
-    50% { -o-transform: scale(1); }
-    100% { -o-transform: scale(1); } 
-  }
-  @keyframes pulse { 
-    0% {transform: scale(1);}
-    50% {transform: scale(1.1);}
-    100% {transform: scale(1);}
-  }
+        .secaoPreparacao{
+            background: #eaeaea;
+            height: 1100px;
+        }
 
-.imgAlgumaDuvida{
-    width: 300px;
-    margin-left: -250px;
-}
+        .sombraBox{
+            box-shadow: 0 -12px 50px -20px rgb(0 0 0 / 18%);
+        }
 
-.ficouComDuvida{
-    font-size: 12px;
-    position: relative;
-    left: -225px;
-    top: -23px;
-}
+        .conteudoIngressos{
+            padding: 16px 40px;;
+        }
 
-.vamosTeAjudar{
-    font-size: 12px;
-    position: relative;
-    left: -220px;
-    top: -70px;
-    font-weight: bold;
-}
-@media (min-width:1600px) {
-    .conteudo{
-        min-width: 1600px;
-    }
-}
+        .garantaAgora{
+            width: 50%;
+            font-size: 32px;
+        }
+        .span_dataGaranta{
+            font-size: 24px;
+        }
+        .span_dataParticipacao{
+            font-size: 24px;
+        }
+        .block{
+            border-radius: 20px;
+            height: 300px;
+            background-color: #CECECE;
+        }
+        .titulo{
+            border-radius: 20px 20px 0px 0px;
+            background-color: #E76353;
+        }
 
-@media (min-width:1500px) {
-    .logoEvento{
-        margin-left: 0%;
-    }
-    .span_ultimasVagas {
-        margin-left: 0%;
-    }
-    .rowImagensDatas {
-        margin-left: 16%;
-    }
-    .rowDescricaoEvento {
-        margin-left: 0%;
-    }
-    .conteudo{
-        min-width: 1500px;
-    }
-    .conteudoPerguntas {
-        margin-top: -40%;
-    }
-}
+        .span_titulo{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .corpo{
+            text-align: center;
+        }
+        .span_corpo{
+            font-size: 83px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .span_emBreve{
+            font-size: 83px;
+            font-weight: bold;
+            padding: 10px;
+            opacity: .2;
+        }
+        .botaoQuero{
+            border-radius: 20px;
+            padding: 5px 15px;    
+            border: none;
+            margin-top: 5%;
+            background: #616060;
+            transition: all .2s;
+            color: #fff;
+        }
+        .botaoQuero:hover{
+            background: #000000;
+        }
+        .perguntarFrequentes{
+            background-color: #DFDFDF;
+            padding: 16px 80px;
+        }
 
-@media (min-width:1400px) {
-    .logoEvento{
-        margin-left: 0%;
-    }
-    .span_ultimasVagas {
-        margin-left: 0%;
-    }
-    .rowImagensDatas {
-        margin-left: 16%;
-    }
-    .rowDescricaoEvento {
-        margin-left: 0%;
-    }
-    .rowDescricaoEvento {
-        margin-left: 0%;
-    }
-    .conteudoParaQuem {
-        max-width: 1300px;
-    }
-    
-    .conteudo {
-        max-width: 1400px;
-    }
-    .containerImagensDescricao{
-        max-width: 1300px;
-    }
-    .conteudoConhecaEvento{
-        max-width: 1400px;
-    }
-}
+        .perguntasFrequentesTitulo{
+            font-size: 32px;
+            font-weight: bold;
+        }
 
-@media (max-width:768px) {
-    .fundoPontilhado1 {
-        width: 100px;
-    }
-    .fundoPontilhado2 {
-        width: 100px;
-    }
-    .float {
-        bottom: 10px;
-    }
-    .floatDuvida{
-        bottom: 120px;
-    }
-    .imgProgramacao{
-        width: 400px;
-    }
-    .marginLCarrousel{
-        margin-left: 0px;
-    }
-    
-    .marginRCarrousel{
-        margin-right: 0px;
-    }
-    .col_mapa{
-        margin-left: -17%;
-    }
-    .span_ultimasVagas {
-        margin-left: 9%;
-    }
-    .garantaAgora{
-        width: 100%;
-    }
-    .rowLogoBD{
-        display: flex;
-        justify-content: flex-start;
-    }
-    .bdConsultoriaRodape{
-        margin-left: -22px;
-    }
-    .conteudoPerguntas {
-        margin-top: -790px;
-    }
-    .imgIcone {
-        margin-right: 10px;
-    }
-    .camadaEvento {
-        height: 1043px;
-    }
-    .bd_consultoriaMenor{
-        display: none;
-    }
-    .rowImagensDescricao {
-        margin-top: 80px;
-    }
-    .conteudoApresentacao video{
-        height: 800px;
-        top: 80px;
-    }
-    .camadaVideo {
-        height: 800px;
-        top: 80px;
-    }
-    .rowDescricaoEvento{
-        margin-left: 0%;
-    }
-    .conteudo {
-        padding: 15px 0px;
-    }
-    .conteudoConhecaEvento {
-        padding: 96px 0px 0px 20px;
-    }
-    .setaBaixo {
-        width: 100px;
-        position: absolute;
-        bottom: 7%;
-    }
-    .setaTopo {
-        width: 100px;
-        position: absolute;
-        right: 0%;
-        top: -9%;
-    }
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-        display: inline-block;
-        width: 2rem;
-        height: 2rem;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        background-size: 100% 100%;
-    }
-    .carousel-control-next, .carousel-control-prev {
-        position: absolute;
-        top: 690px;
-        bottom: 0;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 15%;
-        padding: 0;
-        color: #fff;
-        text-align: center;
-        background: 0 0;
-        border: 0;
-        opacity: .5;
-        transition: opacity .15s ease;
-    }
-    .secaoPreparacao{
-        height: 2200px;
-    }
-    .apresentacaoEvento {
-        height: 750px;
-    }
-    .containerImagensDescricao{
-        padding: 0 20px;
-    }
+        .boxPergunta{
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            z-index: 99;
+            background: #DFDFDF;
+        }
+        .span_pergunta{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .float{
+            position:fixed;
+            height:60px;
+            bottom:60px;
+            right:40px;
+            border-radius:50px;
+            text-align:center;
+            font-size:30px;
+            z-index:100;
+        }
+        .fechar{
+            border: none;
+            font-size: 12px;
+            position: relative;
+            top: 0px;
+            top: -39px;
+            left: -30px;
+            background: transparent;
+            display: initial;
+            font-weight: bold;
+        }
+        .floatDuvida{
+            position:fixed;
+            height:60px;
+            bottom: 180px;
+            right: -150px;
+            border-radius:50px;
+            text-align:center;
+            font-size:30px;
+            z-index:100;
+        }
 
-    .imagemTopo, .imagemBaixo{
-        width: 35px;
-    }
-    .conteudoParaQuem{
-        padding: 0;
-    }
-    .h2confira{
-        text-align: center;
-    }
-    .col_img{
-        display: flex;
-        justify-content: left;
-    }
-    .conteudoIngressos{
-        padding: 0;
-    }
-    .block {
-        height: 380px;
-    }
-    .perguntarFrequentes {
-        padding: 0;
-    }
-    #countdown_dashboard{
-        padding: 0;
-    }
-    .saibaMais {
-        width: 80%;
-    }
-    .logoEvento{
-        margin-left: 0%;
-    }
-}
+        .my-float{
+            margin-top:16px;
+        }
+        .imgLineUP{
+            width: 250px;
+        }
+
+        .imgLineUP:hover{
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            -moz-transform: scale(1.1) ;
+            -webkit-transform: scale(1.1) ;
+            -o-transform: scale(1.1)  ;
+            -ms-transform: scale(1.1)  ;
+            transform: scale(1.1) ;
+        }
+
+
+        .fundoCima{
+            width: 100px;
+            left: 0%;
+            right: auto;
+            bottom: 0%;
+            opacity: 0.5;
+            -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+            transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            position: relative;
+            z-index: 2;
+            top: -160px;
+        }
+        .rowLogoBD{
+            display: flex;
+            justify-content: center;
+        }
+        .conteudoPerguntas{
+            margin-top: -70%;
+        }
+        .col_img{
+            display: flex;
+            justify-content: center;
+        }
+
+        .logoEvento{
+            margin-left: 20%;
+        }
+
+        .imgProgramacao{
+            width: 700px;
+            position: relative;
+            left: 0px;
+            z-index: 1;
+        }
+
+        .fundoPontilhado1{
+            width: 300px;
+            position: relative;
+            left: 195px;
+        }
+
+        .fundoPontilhado2{
+            width: 300px;
+            position: relative;
+            right: 195px;
+        }
+
+        .imgProgramacao:hover{
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            -moz-transform: scale(1.1) ;
+            -webkit-transform: scale(1.1) ;
+            -o-transform: scale(1.1)  ;
+            -ms-transform: scale(1.1)  ;
+            transform: scale(1.1) ;
+        }
+        .botaoQuero1lote{
+            border-radius: 20px;
+            padding: 5px 15px;    
+            border: none;
+            margin-top: 5%;
+            background: #BABABA;
+        }
+        .botaoQuero {
+            -webkit-animation: pulse 1s ease infinite;
+            -moz-animation: pulse 1s ease infinite;
+            -ms-animation: pulse 1s ease infinite;
+            -o-animation: pulse 1s ease infinite;
+            animation: pulse 1s ease infinite;
+        }
+        @-webkit-keyframes pulse {
+            0% {
+            -webkit-transform: scale(1);
+            }
+            25% {
+            -webkit-transform: scale(1.1);
+            }
+            50% {
+            -webkit-transform: scale(1);
+            }
+            100% {
+            -webkit-transform: scale(1);
+            }
+        }
+        @-moz-keyframes pulse {
+            0% {
+            -moz-transform: scale(1);
+            }
+            25% {
+            -moz-transform: scale(1.1);
+            }
+            50% {
+            -moz-transform: scale(1);
+            }
+            100% {
+            -moz-transform: scale(1);
+            }
+        }
+        @-ms-keyframes pulse {
+            0% {
+            -ms-transform: scale(1);
+            }
+            25% {
+            -ms-transform: scale(1.1);
+            }
+            50% {
+            -ms-transform: scale(1);
+            }
+            100% {
+            -ms-transform: scale(1);
+            }
+        }
+        @-o-keyframes pulse {
+            
+            0% { -o-transform: scale(1); }
+            25% { -o-transform: scale(1.1); }
+            50% { -o-transform: scale(1); }
+            100% { -o-transform: scale(1); } 
+        }
+        @keyframes pulse { 
+            0% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+        }
+
+        .imgAlgumaDuvida{
+            width: 300px;
+            margin-left: -250px;
+        }
+
+        .ficouComDuvida{
+            font-size: 12px;
+            position: relative;
+            left: -225px;
+            top: -23px;
+        }
+
+        .vamosTeAjudar{
+            font-size: 12px;
+            position: relative;
+            left: -220px;
+            top: -70px;
+            font-weight: bold;
+        }
+        @media (min-width:1600px) {
+            .conteudo{
+                min-width: 1600px;
+            }
+        }
+
+        @media (min-width:1500px) {
+            .logoEvento{
+                margin-left: 0%;
+            }
+            .span_ultimasVagas {
+                margin-left: 0%;
+            }
+            .rowImagensDatas {
+                margin-left: 16%;
+            }
+            .rowDescricaoEvento {
+                margin-left: 0%;
+            }
+            .conteudo{
+                min-width: 1500px;
+            }
+            .conteudoPerguntas {
+                margin-top: -40%;
+            }
+        }
+
+        @media (min-width:1400px) {
+            .logoEvento{
+                margin-left: 0%;
+            }
+            .span_ultimasVagas {
+                margin-left: 0%;
+            }
+            .rowImagensDatas {
+                margin-left: 16%;
+            }
+            .rowDescricaoEvento {
+                margin-left: 0%;
+            }
+            .rowDescricaoEvento {
+                margin-left: 0%;
+            }
+            .conteudoParaQuem {
+                max-width: 1300px;
+            }
+            
+            .conteudo {
+                max-width: 1400px;
+            }
+            .containerImagensDescricao{
+                max-width: 1300px;
+            }
+            .conteudoConhecaEvento{
+                max-width: 1400px;
+            }
+        }
+
+        @media (max-width:768px) {
+            .fundoPontilhado1 {
+                width: 100px;
+            }
+            .fundoPontilhado2 {
+                width: 100px;
+            }
+            .float {
+                bottom: 10px;
+            }
+            .floatDuvida{
+                bottom: 120px;
+            }
+            .imgProgramacao{
+                width: 400px;
+            }
+            .marginLCarrousel{
+                margin-left: 0px;
+            }
+            
+            .marginRCarrousel{
+                margin-right: 0px;
+            }
+            .col_mapa{
+                margin-left: -17%;
+            }
+            .span_ultimasVagas {
+                margin-left: 9%;
+            }
+            .garantaAgora{
+                width: 100%;
+            }
+            .rowLogoBD{
+                display: flex;
+                justify-content: flex-start;
+            }
+            .bdConsultoriaRodape{
+                margin-left: -22px;
+            }
+            .conteudoPerguntas {
+                margin-top: -790px;
+            }
+            .imgIcone {
+                margin-right: 10px;
+            }
+            .camadaEvento {
+                height: 1021px;
+            }
+            .bd_consultoriaMenor{
+                display: none;
+            }
+            .rowImagensDescricao {
+                margin-top: 80px;
+            }
+            .conteudoApresentacao video{
+                height: 800px;
+                top: 80px;
+            }
+            .camadaVideo {
+                height: 800px;
+                top: 80px;
+            }
+            .rowDescricaoEvento{
+                margin-left: 0%;
+            }
+            .conteudo {
+                padding: 15px 0px;
+            }
+            .conteudoConhecaEvento {
+                padding: 96px 0px 0px 20px;
+            }
+            .setaBaixo {
+                width: 100px;
+                position: absolute;
+                bottom: 7%;
+            }
+            .setaTopo {
+                width: 100px;
+                position: absolute;
+                right: 0%;
+                top: -9%;
+            }
+            .carousel-control-next-icon, .carousel-control-prev-icon {
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                background-size: 100% 100%;
+            }
+            .carousel-control-next, .carousel-control-prev {
+                position: absolute;
+                top: 690px;
+                bottom: 0;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15%;
+                padding: 0;
+                color: #fff;
+                text-align: center;
+                background: 0 0;
+                border: 0;
+                opacity: .5;
+                transition: opacity .15s ease;
+            }
+            .secaoPreparacao{
+                height: 2200px;
+            }
+            .apresentacaoEvento {
+                height: 750px;
+            }
+            .containerImagensDescricao{
+                padding: 0 20px;
+            }
+
+            .imagemTopo, .imagemBaixo{
+                width: 35px;
+            }
+            .conteudoParaQuem{
+                padding: 0;
+            }
+            .h2confira{
+                text-align: center;
+            }
+            .col_img{
+                display: flex;
+                justify-content: left;
+            }
+            .conteudoIngressos{
+                padding: 0;
+            }
+            .block {
+                height: 380px;
+            }
+            .perguntarFrequentes {
+                padding: 0;
+            }
+            #countdown_dashboard{
+                padding: 0;
+            }
+            .saibaMais {
+                width: 80%;
+            }
+            .logoEvento{
+                margin-left: 0%;
+            }
+        }
